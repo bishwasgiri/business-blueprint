@@ -6,11 +6,13 @@ import { consult, packages } from "../Assets/asset";
 
 const Team = () => {
   return (
-    <div className="mt-36 mx-auto w-[70%] relative">
+    <div className="mt-36 mx-auto w-full lg:w-[70%] relative">
       <Heading name="Our Team" />
-      <div className="mt-20 flex justify-between items-start space-x-5 relative">
-        <div className="w-[600px] flex flex-col items-start justify-start space-y-5">
-          <h1 className="text-4xl text-primary">Best Breed of Experts</h1>
+      <div className="mt-20 mx-auto w-[80%] xl:w-full flex flex-col-reverse  justify-center items-center space-x-0 gap-7 xl:flex-row xl:justify-between xl:items-start xl:space-x-5 xl:space-y-0 relative">
+        <div className="w-full lg:w-[600px] flex flex-col items-start justify-start space-y-5">
+          <h1 className="text-4xl text-primary text-center">
+            Best Breed of Experts
+          </h1>
           <p className="text-2xl text-tertiary opacity-50 font-sans text-justify">
             We are Nepal's best chartered accountancy firms, that have helped
             small to medium size businesses. We help them with all aspects of
@@ -28,9 +30,9 @@ const Team = () => {
               Flexible packages on accounting, tax and business growth
             </span>
           </div>
-          <Button>Get in Touch</Button>
+          <Button classes="bg-action">Get in Touch</Button>
         </div>
-        <div className=" w-[600px] h-[600px] relative z-20 ">
+        <div className="w-[100vw] h-[100vw] lg:w-[600px] lg:h-[600px] relative z-20 ">
           <img
             src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="team"

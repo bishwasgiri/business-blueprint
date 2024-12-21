@@ -1,27 +1,44 @@
 import React from "react";
 import Button from "../UI/Button";
 import Circle from "../UI/Circle";
+import personImage from "../Images/work_person.png";
 
 const Hero = () => {
+  const handleRedirect = () => {
+    // Replace with your Google Form URL
+    console.log("button  clicked");
+    const googleFormUrl =
+      "https://docs.google.com/forms/d/e/1FAIpQLSdPrK7lBvd1k7vIZHhP0f23kFBgrR_cxH1EYTDdjhejG3FPPA/viewform?usp=sharing";
+    window.open(googleFormUrl, "_blank"); // Opens in a new tab
+  };
+
   return (
-    <div className="mt-36 mx-auto w-[70%] flex justify-between items-start relative">
-      <div className="w-[600px] uppercase flex flex-col items-start space-y-5 text-tertiary">
-        <p className="text-4xl leading-10 ">
-          We do the <span className="underline decoration-action">numbers</span>
+    <div className="mt-20 lg:mt-24 mx-auto w-full lg:w-[70%] flex flex-col items-center justify-center space-y-7 xl:flex-row xl:justify-between xl:items-center relative">
+      <div className="w-full lg:w-[600px] uppercase flex flex-col items-center lg:items-start space-y-7 text-tertiary relative">
+        <p className="text-3xl md:text-5xl leading-10">
+          <span className="opacity-40">We do the</span>
+          <span className="ml-3 underline decoration-action font-bold">
+            numbers
+          </span>
         </p>
-        <p className="text-4xl">and help you</p>
-        <span className=" text-[180px] leading-[180px] text-primary font-bold cursor-pointer hover:scale-x-105 transition-all duration-300 ease-in-out">
+        <p className="text-3xl md:text-5xl opacity-40">and help you</p>
+        <span className="text-[100px] leading-[100px] md:text-[180px] md:leading-[180px] text-primary font-extrabold cursor-pointer hover:scale-x-105 transition-all duration-300 ease-in-out">
           Grow
         </span>
-        <span className="text-4xl font-bold">Your Business</span>
-        <Button>Get in Touch</Button>
+        <span className="text-4xl md:text-6xl font-bold">Your Business</span>
+        <div className="flex flex-col justify-center items-center lg:flex-row lg:justify-between lg:items-start space-y-5 space-x-0 lg:space-y-0 lg:space-x-5">
+          <Button classes="bg-secondary">Get in Touch</Button>
+          <Button classes="bg-action" onClick={handleRedirect}>
+            Initial Consultation
+          </Button>
+        </div>
       </div>
 
-      <div className=" w-[600px] h-[600px] relative z-20">
+      <div className=" w-full h-full lg:w-[600px] lg:h-[600px]  z-20 bg-zinc-50 rounded-tl-[100px] rounded-br-[100px] shadow-md relative">
         <img
-          className="w-full h-full object-cover rounded-tl-[100px] rounded-br-[100px]"
-          src="https://images.unsplash.com/photo-1545184180-25d471fe75eb?q=80&w=1861&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt=""
+          src={personImage}
+          alt="person_working"
+          className="w-full h-full object-cover rounded-tl-[100px] rounded-br-[100px] "
         />
       </div>
       <Circle />

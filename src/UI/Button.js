@@ -1,9 +1,10 @@
 import React from "react";
 
-const Button = (props) => {
+const Button = ({ classes, children, onClick }) => {
+  const design = `${classes} + px-7 py-5 text-center text-2xl text-white rounded-md shadow-xl`;
   return (
-    <button className="bg-[#f4b400] px-5 py-3 text-center text-xl text-tertiary rounded-md shadow-xl ">
-      {props.children}
+    <button className={design} onClick={onClick}>
+      {children}
     </button>
   );
 };

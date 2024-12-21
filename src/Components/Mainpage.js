@@ -5,6 +5,7 @@ import Services from "./Services";
 import Workprocess from "./Workprocess";
 import Team from "./Team";
 import Footer from "./Footer";
+import Video from "./Video";
 // import Companies from "./Companies";
 // import Testimonials from "./Testimonials";
 import Faq from "./Faq";
@@ -14,11 +15,10 @@ const Mainpage = () => {
     <>
       <Header />
       <Hero />
-      {/* <Companies /> */}
       <Services />
       <Team />
       <Workprocess />
-      {/* <Testimonials /> */}
+      <Video />
       <Faq />
       <Footer />
     </>
