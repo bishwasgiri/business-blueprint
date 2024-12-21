@@ -3,7 +3,7 @@ import Heading from "../UI/Heading";
 
 const Video = () => {
   return (
-    <div className="mt-36 mx-auto w-[70%] relative ">
+    <div id="videos" className="mt-36 mx-auto w-[70%] relative ">
       <Heading name="Videos" />
       <div className="mt-20 grid grid-cols-1  xl:grid-cols-3 gap-10">
         {/* Video 1 */}

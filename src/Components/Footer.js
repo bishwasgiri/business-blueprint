@@ -3,13 +3,14 @@ import { PiFacebookLogoThin } from "react-icons/pi";
 import { PiInstagramLogoThin } from "react-icons/pi";
 import { PiYoutubeLogoThin } from "react-icons/pi";
 import { email, phone, newsletter } from "../Assets/asset";
+import { Link } from "react-router-dom";
 import Button from "../UI/Button";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <div className="mt-36">
-      <div className=" mx-auto w-full xl:w-[70%] flex items-center  justify-around bg-gray-100 rounded-tl-[100px] rounded-br-[100px] p-10 shadow-md">
+    <div id="contacts" className="mt-36">
+      <div className=" mx-auto w-full xl:w-[70%] flex items-center  justify-around bg-gray-100 rounded-tl-[100px] rounded-br-[100px] p-10 shadow-sm">
         <div className="hidden lg:block text-secondary">
           <span className="inline-block">{newsletter}</span>
         </div>
@@ -30,14 +31,17 @@ const Footer = () => {
         <div className="mx-auto w-full lg:w-[80%] flex flex-col justify-center items-center space-y-5">
           <footer className="flex w-full flex-col-reverse justify-center items-center gap-7  lg:flex-row  lg:justify-between lg:items-start">
             <div className="flex flex-col items-center  lg:items-start space-y-3 ">
-              <div className="flex flex-col items-center justify-center flex-3">
+              <Link
+                to="/"
+                className="flex flex-col items-center justify-center flex-3"
+              >
                 <h1 className="text-white font-bold tracking-tighter text-xl ">
                   The Business
                 </h1>
                 <h1 className="uppercase text-3xl font-semibold bg-primary p-3 rounded-md text-white shadow-xl">
                   Blueprint
                 </h1>
-              </div>
+              </Link>
               <p className="text-xl text-center lg:text-start">
                 We build your businesses to reach great heights.
               </p>
@@ -46,7 +50,7 @@ const Footer = () => {
               <h1 className="text-2xl">Quick Links</h1>
               <ul className="text-xl flex flex-col items-center lg:items-start space-y-1">
                 <li>
-                  <a href="/home">Home</a>
+                  <Link to="/">Home</Link>
                 </li>
                 <li>
                   <a href="/home">Our Services</a>

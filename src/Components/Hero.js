@@ -13,7 +13,10 @@ const Hero = () => {
   };
 
   return (
-    <div className="mt-20 lg:mt-24 mx-auto w-full lg:w-[70%] flex flex-col items-center justify-center space-y-7 xl:flex-row xl:justify-between xl:items-center relative">
+    <div
+      id=""
+      className="mt-20 lg:mt-24 mx-auto w-full lg:w-[70%] flex flex-col items-center justify-center space-y-7 xl:flex-row xl:justify-between xl:items-center relative"
+    >
       <div className="w-full lg:w-[600px] uppercase flex flex-col items-center lg:items-start space-y-7 text-tertiary relative">
         <p className="text-3xl md:text-5xl leading-10">
           <span className="opacity-40">We do the</span>

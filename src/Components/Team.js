@@ -6,7 +6,7 @@ import { consult, packages } from "../Assets/asset";
 
 const Team = () => {
   return (
-    <div className="mt-36 mx-auto w-full lg:w-[70%] relative">
+    <div id="teams" className="mt-36 mx-auto w-full lg:w-[70%] relative">
       <Heading name="Our Team" />
       <div className="mt-20 mx-auto w-[80%] xl:w-full flex flex-col-reverse  justify-center items-center space-x-0 gap-7 xl:flex-row xl:justify-between xl:items-start xl:space-x-5 xl:space-y-0 relative">
         <div className="w-full lg:w-[600px] flex flex-col items-start justify-start space-y-5">

@@ -4,10 +4,10 @@ import { team } from "../Assets/asset";
 
 const Services = () => {
   return (
-    <div className="mt-36 mx-auto w-full xl:w-[70%]">
+    <div id="services" className="mt-36 mx-auto w-full xl:w-[70%]">
       <Heading name="Our Services" />
       <Swipe />
-      <div className="mt-20 mx-auto flex flex-col justify-center items-center space-x-0 space-y-4 xl:flex-row xl:justify-between p-10 bg-gray-100 rounded-tl-[100px] rounded-br-[100px] shadow-md">
+      <div className="mt-20 mx-auto flex flex-col justify-center items-center space-x-0 space-y-4 xl:flex-row xl:justify-between p-10 bg-gray-100 rounded-tl-[100px] rounded-br-[100px] shadow-sm">
         <div className="w-full h-full xl:w-1/2 ">{team}</div>
         <div className="w-full h-full xl:w-1/2 flex justify-center items-center ">
           <div className="flex flex-col items-center xl:items-start space-y-4 w-full">
