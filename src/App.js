@@ -4,14 +4,12 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
-    <div className="bg-[#F8F9FA] font-playfair overflow-hidden">
-      <Router>
-        <Routes>
-          <Route path="/" element={<Mainpage />} />
-          <Route path="/login" element={<Login />} />
-        </Routes>
-      </Router>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Mainpage />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </Router>
   );
 };
 
