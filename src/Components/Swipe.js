@@ -64,62 +64,31 @@ const Swipe = () => {
       name: "advisory services",
       imageLink: advisory,
     },
+    {
+      id: "live",
+      name: "live classes",
+      imageLink: advisory,
+    },
   ];
   return (
-    <div className="relative overflow-visible">
-      <Swiper
-        slidesPerView={1}
-        spaceBetween={30}
-        pagination={{ clickable: true }}
-        navigation={true}
-        modules={[Navigation, Pagination]}
-        className="mySwiper mt-10"
-        breakpoints={{
-          // For screens >= 480px (sm)
-          480: {
-            slidesPerView: 1,
-            spaceBetween: 20,
-          },
-          // For screens >= 768px (md)
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 30,
-          },
-          // For screens >= 1020px (lg)
-          1020: {
-            slidesPerView: 3,
-            spaceBetween: 40,
-          },
-          // For screens >= 1440px (xl)
-          1440: {
-            slidesPerView: 4,
-            spaceBetween: 50,
-          },
-        }}
-      >
+    <div className="mt-14 mx-auto w-[95%]">
+      <div className="grid grid-cols-1 md:grid-cols-2  xl:grid-cols-5 gap-10">
         {services.map((service) => (
-          <SwiperSlide
+          <div
             key={service.id}
-            className="shadow-xl rounded-lg border-2  bg-zinc-50 cursor-pointer"
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              flexDirection: "column",
-              width: "300px",
-              height: "300px",
-              gap: "10px",
-            }}
+            className="shadow-xl rounded-lg border-2  bg-zinc-50 cursor-pointer w-full h-52 md:h-60  xl:w-60 xl:h-60 flex items-center justify-center p-3"
           >
-            <div className="inline-block bg-tint rounded-full p-3 ">
-              {service.imageLink}
+            <div className="flex flex-col items-center justify-center space-y-2">
+              <span className="inline-block bg-tint rounded-full p-2 ">
+                {service.imageLink}
+              </span>
+              <span className="inline-block uppercase text-xl font-bold text-secondary text-center">
+                {service.name}
+              </span>
             </div>
-            <p className="uppercase text-xl font-bold text-secondary text-center">
-              {service.name}
-            </p>
-          </SwiperSlide>
+          </div>
         ))}
-      </Swiper>
+      </div>
     </div>
   );
 };

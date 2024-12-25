@@ -44,7 +44,7 @@ const Mainpage = () => {
           <Services />
           <Team />
           <Workprocess />
-          <Video />
+          {/* <Video /> */}
           <Faq />
           <Footer />
         </div>
