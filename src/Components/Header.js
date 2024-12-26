@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <>
       <div className="h-14 bg-secondary mx-auto ">
-        <div className="mx-auto w-full lg:w-4/5 flex justify-end items-center space-x-4 p-4">
+        <div className="mx-auto w-full lg:w-[90%] flex justify-end items-center space-x-4 p-4">
           <div className="flex items-center  space-x-2">
             <span className="text-white">{phone}</span>
             <span className="font-sans text-white text-xl">9808123465</span>

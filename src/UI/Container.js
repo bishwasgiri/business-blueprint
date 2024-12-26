@@ -2,9 +2,7 @@ import React from "react";
 
 const Container = (props) => {
   return (
-    <div className="mx-auto w-full lg:w-full xl:w-4/5 p-3 ">
-      {props.children}
-    </div>
+    <div className="mx-auto w-full lg:w-[90%]  p-3 ">{props.children}</div>
   );
 };
 

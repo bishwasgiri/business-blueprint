@@ -10,7 +10,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <div id="contacts" className="mt-36">
-      <div className=" mx-auto w-full xl:w-[70%] flex items-center  justify-around bg-gray-100 rounded-tl-[100px] rounded-br-[100px] p-10 shadow-sm">
+      <div className=" mx-auto w-full  xl:w-[70%] flex items-center  justify-around bg-gray-100 rounded-tl-[100px] rounded-br-[100px] p-10 shadow-sm">
         <div className="hidden lg:block text-secondary">
           <span className="inline-block">{newsletter}</span>
         </div>
@@ -27,7 +27,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-secondary text-white p-10 mt-10">
+      <div className="bg-secondary text-white p-10">
         <div className="mx-auto w-full lg:w-[80%] flex flex-col justify-center items-center space-y-5">
           <footer className="flex w-full flex-col-reverse justify-center items-center gap-7  lg:flex-row  lg:justify-between lg:items-start">
             <div className="flex flex-col items-center  lg:items-start space-y-3 ">

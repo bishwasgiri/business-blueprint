@@ -1,6 +1,6 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Navigation, Pagination } from "swiper/modules";
 import {
   strategy,
   risk,
@@ -71,12 +71,12 @@ const Swipe = () => {
     },
   ];
   return (
-    <div className="mt-14 mx-auto w-[95%]">
-      <div className="grid grid-cols-1 md:grid-cols-2  xl:grid-cols-5 gap-10">
+    <div className="mt-14 mx-auto w-full md:w-[80%] lg:w-full  xl:w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-5 gap-10">
         {services.map((service) => (
           <div
             key={service.id}
-            className="shadow-xl rounded-lg border-2  bg-zinc-50 cursor-pointer w-full h-52 md:h-60  xl:w-60 xl:h-60 flex items-center justify-center p-3"
+            className="flex items-center justify-center p-3 shadow-xl rounded-lg border-2  bg-zinc-50 cursor-pointer w-full h-60"
           >
             <div className="flex flex-col items-center justify-center space-y-2">
               <span className="inline-block bg-tint rounded-full p-2 ">
