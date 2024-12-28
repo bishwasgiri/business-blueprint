@@ -38,13 +38,14 @@ const Mainpage = () => {
       {!isDocumentLoaded ? (
         <Loader />
       ) : (
-        <div className="bg-[#F8F9FA] font-playfair overflow-hidden">
+        <div className="bg-gray-50 font-playfair overflow-hidden">
           <Header />
           <Hero />
           <Services />
           <Team />
+          <Video />
           <Workprocess />
-          {/* <Video /> */}
+
           <Faq />
           <Footer />
         </div>

@@ -9,12 +9,14 @@ module.exports = {
         tertiary: "#333333",
         tint: "#bab0e0",
         action: "#f4b400",
+        light: "#e0e4fb",
       },
       screens: {
         sm: "480px",
         md: "768px",
         lg: "1020px",
         xl: "1440px",
+        sec: "1200px",
       },
       fontFamily: {
         playfair: ["Playfair Display", "serif"],

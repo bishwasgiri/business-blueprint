@@ -2,31 +2,13 @@ import React from "react";
 import { PiFacebookLogoThin } from "react-icons/pi";
 import { PiInstagramLogoThin } from "react-icons/pi";
 import { PiYoutubeLogoThin } from "react-icons/pi";
-import { email, phone, newsletter } from "../Assets/asset";
+import { email, phone } from "../Assets/asset";
 import { Link } from "react-router-dom";
-import Button from "../UI/Button";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <div id="contacts" className="mt-36">
-      <div className=" mx-auto w-full  xl:w-[70%] flex items-center  justify-around bg-gray-100 rounded-tl-[100px] rounded-br-[100px] p-10 shadow-sm">
-        <div className="hidden lg:block text-secondary">
-          <span className="inline-block">{newsletter}</span>
-        </div>
-
-        <div>
-          <div className=" flex flex-col justify-start space-y-4 ">
-            <h1 className="font-extrabold text-2xl text-primary">
-              Download Our Newsletter
-            </h1>
-            <p className="text-xl opacity-50">
-              Download our newsletter and know about us.
-            </p>
-            <Button classes="bg-action">Download</Button>
-          </div>
-        </div>
-      </div>
       <div className="bg-secondary text-white p-10">
         <div className="mx-auto w-full lg:w-[80%] flex flex-col justify-center items-center space-y-5">
           <footer className="flex w-full flex-col-reverse justify-center items-center gap-7  lg:flex-row  lg:justify-between lg:items-start">
