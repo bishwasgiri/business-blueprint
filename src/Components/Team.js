@@ -18,21 +18,25 @@ const Team = () => {
               Best Breed of Experts
             </h1>
             <p className="text-2xl text-tertiary text-justify ">
-              The business blue print is one of the best business consulting
+              The business blueprint is one of the best business consulting
               platform in Nepal that have helped small and medium size
               businesses. We help them with all aspects of accounting. Our team
               members are expert in what they do and they help to thrive your
               businesses.
             </p>
             <div className="text-2xl text-tertiary  font-sans flex space-x-5 items-center ">
-              <span className="inline-block text-tint ">{consult}</span>{" "}
-              <span className="inline-block text-secondary font-extrabold">
+              <span className="inline-block bg-tint rounded-full p-2">
+                {consult}
+              </span>{" "}
+              <span className="inline-block text-primary font-bold ">
                 Free consultation provided
               </span>
             </div>
             <div className="text-2xl text-tertiary  font-sans flex space-x-5 items-center ">
-              <span className="inline-block text-tint">{packages}</span>
-              <span className="inline-block text-secondary font-extrabold">
+              <span className="inline-block bg-tint rounded-full p-2">
+                {packages}
+              </span>
+              <span className="inline-block text-primary font-bold">
                 {" "}
                 Flexible packages on accounting, tax and business growth
               </span>

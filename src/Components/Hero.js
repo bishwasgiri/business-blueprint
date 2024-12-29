@@ -14,26 +14,26 @@ const Hero = () => {
   };
 
   return (
-    <div className="mt-10 mx-auto w-full flex flex-col items-center justify-center space-x-0 space-y-4  md:space-y-8 lg:space-y-0   lg:flex-row lg:justify-center  lg:items-center   lg:w-[85%] xl:w-[75%] xl:justify-between  xl:mt-14 relative ">
-      <div className="mx-auto w-[80%] h-full uppercase flex flex-col items-center space-y-4  md:space-y-8 lg:items-start lg:justify-center lg:space-y-7    sec:justify-between    xl:h-[100%]  relative ">
-        <p className="flex flex-col items-center space-y-1 lg:items-start">
+    <div className="mt-10 mx-auto w-full flex flex-col items-center justify-center space-x-0 space-y-4  md:space-y-8 lg:space-y-0  lg:w-[85%] lg:flex-row lg:justify-between  lg:items-center lg:space-x-5 xl:w-[75%] xl:space-x-10   xl:mt-14 relative ">
+      <div className="mx-auto w-[80%] h-full uppercase flex flex-col items-center space-y-4  md:space-y-8   lg:items-start lg:justify-center lg:space-y-7   sec:justify-between    xl:h-[100%]   relative">
+        <p className="flex flex-col items-center space-y-1 lg:items-start text-tertiary">
           <span className="text-2xl md:text-4xl lg:text-2xl">
             The Architect of{" "}
           </span>
 
           <span className="text-2xl md:text-4xl  sec:text-6xl xl:text-8xl ">
             Business{" "}
-            <span className="text-primary font-extrabold">Excellence</span>
+            <span className="text-secondary font-extrabold">Excellence</span>
           </span>
         </p>
-        <p className="flex flex-col items-center space-y-1 lg:items-start ">
+        <p className="flex flex-col items-center space-y-1 lg:items-start text-tertiary ">
           <span className="text-2xl text-center md:text-4xl lg:text-2xl ">
             Building Framework For
           </span>
 
           <span className="text-2xl md:text-4xl  sec:text-6xl xl:text-8xl ">
             Business{" "}
-            <span className="text-primary font-extrabold">Successes</span>
+            <span className="text-secondary font-extrabold">Successes</span>
           </span>
         </p>
 
@@ -47,13 +47,13 @@ const Hero = () => {
       </div>
 
       <div className=" w-[500px] h-[500px] flex flex-col items-center justify-end xl:justify-center">
-        <div className="w-[60%] md:w-full md:h-full rounded-tl-[100px] rounded-br-[100px] shadow-2xl relative z-60">
+        <div className="w-[60%] md:w-full md:h-full  shadow-2xl relative z-60  border rounded-tl-[100px] rounded-br-[100px] ">
           <img
             src={personImage}
             alt="person_working"
-            className="w-full h-full object-cover rounded-tl-[100px] rounded-br-[100px] bg-gray-50 relative"
+            className="w-full h-full object-cover border rounded-tl-[100px] rounded-br-[100px]  relative"
           />
-          <div className="absolute top-[90px]  w-[30%] left-[-40px] md:left-[-50px] xl:w-[140px] ">
+          <div className="absolute top-[120px]  w-[30%] left-[-40px] md:left-[-50px] xl:left-[-60px] xl:w-[120px] ">
             <img src={sales} alt="sales" className="w-full h-full" />
           </div>
           <div className="absolute top-[-35px] left-[100px]  p-3  ">

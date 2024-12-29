@@ -4,13 +4,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#4335A7",
-        secondary: "#6b5fc1",
-        tertiary: "#333333",
-        tint: "#bab0e0",
+        tint: "#e1e5fe",
+        secbg: "5b4ae1",
+        secondary: "#4f3cc6",
+        primary: "#4335a7",
+        tertiary: "#221c4a",
         action: "#f4b400",
-        light: "#e0e4fb",
       },
+
       screens: {
         sm: "480px",
         md: "768px",

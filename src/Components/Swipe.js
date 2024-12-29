@@ -76,7 +76,7 @@ const Swipe = () => {
         {services.map((service) => (
           <div
             key={service.id}
-            className="flex items-center justify-center p-3 shadow-xl rounded-lg border-2  bg-zinc-50 cursor-pointer w-full h-60"
+            className="flex items-center justify-center p-3 shadow-xl rounded-lg   bg-secbg border cursor-pointer w-full h-60"
           >
             <div className="flex flex-col items-center justify-center space-y-2">
               <span className="inline-block bg-tint rounded-full p-2 ">

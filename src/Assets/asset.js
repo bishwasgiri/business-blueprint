@@ -206,9 +206,9 @@ export const consult = (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
-    strokeWidth={1.5}
+    strokeWidth={0.5}
     stroke="currentColor"
-    className="w-10 h-10"
+    className="size-9"
   >
     <path
       strokeLinecap="round"
@@ -223,9 +223,9 @@ export const packages = (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
-    strokeWidth={1.5}
+    strokeWidth={0.5}
     stroke="currentColor"
-    className="w-10 h-10"
+    className="size-9"
   >
     <path
       strokeLinecap="round"

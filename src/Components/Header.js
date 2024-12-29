@@ -44,7 +44,7 @@ const Header = () => {
               {hamIsClicked ? cross : hamburger}
             </div>
 
-            <ul className="hidden xl:flex justify-between items-center text-xl space-x-6">
+            <ul className="hidden xl:flex justify-between items-center text-xl space-x-6 text-tertiary">
               <li className="hover:text-secondary cursor-pointer">
                 <Link to="/">Home</Link>
               </li>
