@@ -1,19 +1,52 @@
 import Heading from "../UI/Heading";
 import Swipe from "../Components/Swipe";
 import { team } from "../Assets/asset";
-
+import { motion } from "motion/react";
 const Services = () => {
   return (
     <div id="services">
-      <div className="mt-36 mx-auto w-full lg:w-[85%] xl:w-[75%]">
-        <Heading name="Our Services" />
+      <Heading name="Our Services" />
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{
+          type: "tween",
+          duration: 1.2,
+          ease: [0.37, 0, 0.63, 1],
+          delay: 0.4,
+        }}
+        className="mt-14 mx-auto w-full lg:w-[85%] xl:w-[75%]"
+      >
         <Swipe />
-      </div>
+      </motion.div>
       <div className="mt-20  w-[100%]  bg-white rounded-tl-[100px] rounded-br-[100px] shadow-sm ">
-        <div className="mx-auto w-[75%] lg:w-[100%] xl:w-[75%] ">
+        <motion.div className="mx-auto w-[75%] lg:w-[100%] xl:w-[75%] ">
           <div className=" flex flex-col justify-center items-center space-x-0 space-y-4 lg:flex-row lg:justify-between lg:space-x-10 p-10">
-            <div className="w-full h-full lg:w-1/2 lg:h-full  ">{team}</div>
-            <div className="w-full h-full lg:w-1/2 lg:h-1/2  flex justify-center items-center">
+            <motion.div
+              initial={{ x: "-100px", opacity: 0 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{
+                type: "tween",
+                duration: 1.2,
+                ease: [0.37, 0, 0.63, 1],
+              }}
+              className="w-full h-full lg:w-1/2 lg:h-full  "
+            >
+              {team}
+            </motion.div>
+            <motion.div
+              initial={{ x: "100px", opacity: 0 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{
+                type: "tween",
+                duration: 1.2,
+                ease: [0.37, 0, 0.63, 1],
+              }}
+              className="w-full h-full lg:w-1/2 lg:h-1/2  flex justify-center items-center"
+            >
               <div className="flex flex-col items-center xl:items-start space-y-4 w-full xl:space-y-5">
                 <h1 className="text-primary text-4xl underline underline-offset-8 decoration-action  ">
                   Join Us For:
@@ -49,9 +82,9 @@ const Services = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

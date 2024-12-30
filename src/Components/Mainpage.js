@@ -7,11 +7,11 @@ import Team from "./Team";
 import Footer from "./Footer";
 import Video from "./Video";
 import Faq from "./Faq";
+import Contact from "./Contact";
 import { useState, useEffect } from "react";
 import Loader from "./Loader";
 
 const Mainpage = () => {
-  // const [isLoaded, setIsLoaded] = useState(false);
   const [isDocumentLoaded, setIsDocumentLoaded] = useState(false);
 
   useEffect(() => {
@@ -20,7 +20,6 @@ const Mainpage = () => {
         setIsDocumentLoaded(true);
       }
     };
-
     // Initial check
     checkReadyState();
 
@@ -38,15 +37,15 @@ const Mainpage = () => {
       {!isDocumentLoaded ? (
         <Loader />
       ) : (
-        <div className="bg-gray-50 font-playfair overflow-hidden">
+        <div className="bg-gray-50 font-playfair overflow-hidden relative">
           <Header />
           <Hero />
           <Services />
           <Team />
           <Video />
           <Workprocess />
-
           <Faq />
+          <Contact />
           <Footer />
         </div>
       )}

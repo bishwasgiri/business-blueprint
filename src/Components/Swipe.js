@@ -1,6 +1,4 @@
 import React from "react";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Navigation, Pagination } from "swiper/modules";
 import {
   strategy,
   risk,
@@ -12,10 +10,7 @@ import {
   market,
   feasibility,
 } from "../Assets/asset";
-
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import { motion } from "motion/react";
 
 const Swipe = () => {
   const services = [
@@ -71,7 +66,18 @@ const Swipe = () => {
     },
   ];
   return (
-    <div className="mt-14 mx-auto w-full md:w-[80%] lg:w-full  xl:w-full">
+    <div
+      // initial={{ opacity: 0, y: 50 }}
+      // whileInView={{ opacity: 1, y: 0 }}
+      // viewport={{ once: true, amount: 0.5 }}
+      // transition={{
+      //   type: "tween",
+      //   duration: 1,
+      //   ease: "easeInOut",
+      //   delay: 0.4,
+      // }}
+      className=" mx-auto w-full md:w-[80%] lg:w-full  xl:w-full"
+    >
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-5 gap-10">
         {services.map((service) => (
           <div

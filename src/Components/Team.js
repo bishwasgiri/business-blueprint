@@ -3,6 +3,7 @@ import Heading from "../UI/Heading";
 import Button from "../UI/Button";
 import Circle from "../UI/Circle";
 import { consult, packages } from "../Assets/asset";
+import { motion } from "motion/react";
 
 const Team = () => {
   return (
@@ -13,7 +14,18 @@ const Team = () => {
       <Heading name="Our Team" />
       <div className="mt-20 xl:h-[80vh]">
         <div className=" mx-auto w-[80%]  lg:w-full flex flex-col-reverse  justify-center items-center space-x-0 gap-7 lg:flex-row lg:justify-between lg:items-center lg:space-x-5 lg:space-y-0 relative">
-          <div className="w-full flex  flex-col items-start justify-start space-y-5 lg:flex-1  lg:space-y-3 xl:max-w-xl xl:space-y-5">
+          <motion.div
+            initial={{ x: "-100px", opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{
+              type: "tween",
+              duration: 1.2,
+              ease: [0.37, 0, 0.63, 1],
+              delay: 0.4,
+            }}
+            className="w-full flex  flex-col items-start justify-start space-y-5 lg:flex-1  lg:space-y-3 xl:max-w-xl xl:space-y-5"
+          >
             <h1 className="text-4xl text-primary  xl:text-5xl ">
               Best Breed of Experts
             </h1>
@@ -42,14 +54,25 @@ const Team = () => {
               </span>
             </div>
             <Button classes="bg-action">Get in Touch</Button>
-          </div>
-          <div className="w-[500px] h-[500px] relative z-20 ">
+          </motion.div>
+          <motion.div
+            initial={{ x: "100px", opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{
+              type: "tween",
+              duration: 1.2,
+              delay: 0.4,
+              ease: [0.37, 0, 0.63, 1],
+            }}
+            className="w-[500px] h-[500px] relative z-20 "
+          >
             <img
               src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="team"
               className="w-full h-full object-cover rounded-tl-[100px] rounded-br-[100px] "
             />
-          </div>
+          </motion.div>
           <Circle />
         </div>
       </div>

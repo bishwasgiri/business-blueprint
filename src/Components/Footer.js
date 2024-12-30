@@ -2,15 +2,47 @@ import React from "react";
 import { PiFacebookLogoThin } from "react-icons/pi";
 import { PiInstagramLogoThin } from "react-icons/pi";
 import { PiYoutubeLogoThin } from "react-icons/pi";
-import { email, phone } from "../Assets/asset";
+import { email, phone, uparrow } from "../Assets/asset";
 import { Link } from "react-router-dom";
+import { motion } from "motion/react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const moveToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
   return (
-    <div id="contacts" className="mt-36">
+    <div id="contacts" className="relative">
+      <motion.div
+        initial={{ y: "50px", opacity: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{
+          type: "tween",
+          duration: 1.2,
+          ease: [0.37, 0, 0.63, 1],
+        }}
+        className="absolute right-10 top-10"
+      >
+        <div
+          className="flex justify-center items-center uppercase bg-action text-white w-14 h-14 rounded-full cursor-pointer"
+          onClick={moveToTop}
+        >
+          <span className="inline-block text-primary">{uparrow}</span>
+        </div>
+      </motion.div>
       <div className="bg-secondary text-white p-10">
-        <div className="mx-auto w-full lg:w-[80%] flex flex-col justify-center items-center space-y-5">
+        <motion.div
+          initial={{ y: "50px", opacity: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{
+            type: "tween",
+            duration: 1.2,
+            ease: [0.37, 0, 0.63, 1],
+          }}
+          className="mx-auto w-full lg:w-[80%] flex flex-col justify-center items-center space-y-5"
+        >
           <footer className="flex w-full flex-col-reverse justify-center items-center gap-7  lg:flex-row  lg:justify-between lg:items-start">
             <div className="flex flex-col items-center  lg:items-start space-y-3 ">
               <Link
@@ -85,7 +117,7 @@ const Footer = () => {
               Registration No: <span className="font-sans">559956656</span>
             </span>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
